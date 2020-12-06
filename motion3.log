@@ -1,0 +1,975 @@
+[14268040:motion] [NTC] [ALL] [Nov 23 18:10:48] motion_startup: Using log type (ALL) log level (NTC)
+[14268040:motion] [NTC] [ALL] [Nov 23 18:10:48] become_daemon: Motion going to daemon mode
+[14268040:motion] [NTC] [ALL] [Nov 23 18:10:48] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1209
+[14268040:motion] [NTC] [ALL] [Nov 23 18:10:48] motion_startup: Motion running as daemon process
+[14268040:motion] [NTC] [ENC] [Nov 23 18:10:48] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 23 18:10:48] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 23 18:10:48] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 23 18:10:48] main: Waiting for threads to finish, pid: 1209
+[1:ml1] [NTC] [ALL] [Nov 23 18:10:48] motion_init: Camera 0 started: motion detection Enabled
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] vid_start: Opening V4L2 device
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_start: Using videodevice /dev/video0 and input -1
+[0:wc0] [NTC] [STR] [Nov 23 18:10:48] http_bindsock: listening on 127.0.0.1 port 8080
+[0:wc0] [NTC] [STR] [Nov 23 18:10:48] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 23 18:10:48] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 23 18:10:49] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 23 18:10:49] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 23 18:10:49] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 23 18:10:55] event_newfile: File of type 8 saved to: /mnt/shared/Monitor3/01-20201123181055.mkv
+[1:ml1] [NTC] [ALL] [Nov 23 18:10:55] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 23 18:14:56] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 23 18:23:58] event_newfile: File of type 8 saved to: /mnt/shared/Monitor3/02-20201123182358.mkv
+[1:ml1] [NTC] [ALL] [Nov 23 18:23:58] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 23 18:24:59] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 23 18:26:23] event_newfile: File of type 8 saved to: /mnt/shared/Monitor3/03-20201123182623.mkv
+[1:ml1] [NTC] [ALL] [Nov 23 18:26:23] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 23 18:28:04] mlp_actions: End of event 3
+[1:ml1] [NTC] [ALL] [Nov 23 18:31:14] mlp_actions: End of event 4
+[1:ml1] [NTC] [ALL] [Nov 23 18:31:14] motion_loop: Thread exiting
+[1:ml1] [NTC] [STR] [Nov 23 18:31:14] stream_stop: Closing motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [STR] [Nov 23 18:31:14] stream_stop: Closed motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [VID] [Nov 23 18:31:14] vid_close: Cleaning up V4L2 device
+[1:ml1] [NTC] [VID] [Nov 23 18:31:14] v4l2_cleanup: Closing video device /dev/video0
+[0:wc0] [NTC] [STR] [Nov 23 18:31:15] httpd_run: motion-httpd - Finishing
+[0:wc0] [NTC] [STR] [Nov 23 18:31:15] httpd_run: motion-httpd Closing
+[0:wc0] [NTC] [STR] [Nov 23 18:31:15] motion_web_control: motion-httpd thread exit
+[0:motion] [NTC] [ALL] [Nov 23 18:31:15] main: Threads finished
+[0:motion] [NTC] [ALL] [Nov 23 18:31:16] main: Motion terminating
+[0:motion] [NTC] [ALL] [Nov 23 18:31:16] motion_remove_pid: Removed process id file (pid file).
+[0:motion] [NTC] [ALL] [Nov 23 18:31:16] motion_remove_pid: Closing logfile (/mnt/shared/motion/motion3.log).
+[27125384:motion] [NTC] [ALL] [Nov 24 14:26:46] motion_startup: Using log type (ALL) log level (NTC)
+[27125384:motion] [NTC] [ALL] [Nov 24 14:26:46] become_daemon: Motion going to daemon mode
+[27125384:motion] [NTC] [ALL] [Nov 24 14:26:46] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1194
+[27125384:motion] [NTC] [ALL] [Nov 24 14:26:46] motion_startup: Motion running as daemon process
+[27125384:motion] [NTC] [ENC] [Nov 24 14:26:46] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 24 14:26:46] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 24 14:26:46] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 24 14:26:46] main: Waiting for threads to finish, pid: 1194
+[1:ml1] [NTC] [ALL] [Nov 24 14:26:46] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 24 14:26:46] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 24 14:26:46] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 14:26:46] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 24 14:26:47] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 24 14:26:47] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 24 14:26:47] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 24 14:27:36] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201124142735.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 14:27:36] motion_detected: Motion detected - starting event 1
+[33830536:motion] [NTC] [ALL] [Nov 24 14:32:21] motion_startup: Using log type (ALL) log level (NTC)
+[33830536:motion] [NTC] [ALL] [Nov 24 14:32:21] become_daemon: Motion going to daemon mode
+[33830536:motion] [NTC] [ALL] [Nov 24 14:32:21] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1147
+[33830536:motion] [NTC] [ALL] [Nov 24 14:32:21] motion_startup: Motion running as daemon process
+[33830536:motion] [NTC] [ENC] [Nov 24 14:32:21] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 24 14:32:21] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 24 14:32:21] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 24 14:32:21] main: Waiting for threads to finish, pid: 1147
+[1:ml1] [NTC] [ALL] [Nov 24 14:32:21] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 24 14:32:21] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 24 14:32:21] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 14:32:21] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 24 14:32:21] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 24 14:32:21] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 24 14:32:21] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 24 14:37:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201124143733.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 14:37:34] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 24 14:38:59] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 24 14:42:54] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/02-20201124144254.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 14:42:54] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 24 14:46:01] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 24 15:43:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/03-20201124154313.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 15:43:13] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 24 15:44:34] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 24 16:13:07] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/04-20201124161306.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 16:13:07] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 24 16:14:20] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 24 18:34:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/05-20201124183441.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 18:34:41] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 24 18:36:01] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 24 20:06:45] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/06-20201124200645.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 20:06:45] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 24 20:07:49] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 24 21:15:46] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/07-20201124211545.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 21:15:46] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 24 21:17:12] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 24 21:18:46] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/08-20201124211845.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 21:18:46] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 24 21:19:49] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Nov 24 21:39:25] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/09-20201124213925.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 21:39:25] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Nov 24 21:40:50] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Nov 24 22:48:33] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/10-20201124224833.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 22:48:33] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Nov 24 22:50:15] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Nov 25 08:42:27] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/11-20201125084227.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 08:42:27] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Nov 25 08:44:34] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Nov 25 08:46:46] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/12-20201125084646.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 08:46:46] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Nov 25 08:48:19] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Nov 25 08:50:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/13-20201125085015.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 08:50:15] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Nov 25 08:51:31] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Nov 25 08:56:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/14-20201125085654.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 08:56:55] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Nov 25 08:57:55] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Nov 25 08:59:02] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/15-20201125085902.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 08:59:02] motion_detected: Motion detected - starting event 15
+[1:ml1] [NTC] [ALL] [Nov 25 09:00:04] mlp_actions: End of event 15
+[1:ml1] [NTC] [EVT] [Nov 25 09:04:35] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/16-20201125090435.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:04:35] motion_detected: Motion detected - starting event 16
+[1:ml1] [NTC] [ALL] [Nov 25 09:05:37] mlp_actions: End of event 16
+[1:ml1] [NTC] [EVT] [Nov 25 09:10:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/17-20201125091055.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:10:55] motion_detected: Motion detected - starting event 17
+[1:ml1] [NTC] [ALL] [Nov 25 09:11:55] mlp_actions: End of event 17
+[1:ml1] [NTC] [EVT] [Nov 25 09:12:11] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/18-20201125091211.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:12:11] motion_detected: Motion detected - starting event 18
+[1:ml1] [NTC] [ALL] [Nov 25 09:13:12] mlp_actions: End of event 18
+[1:ml1] [NTC] [EVT] [Nov 25 09:17:07] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/19-20201125091706.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:17:07] motion_detected: Motion detected - starting event 19
+[1:ml1] [NTC] [ALL] [Nov 25 09:18:26] mlp_actions: End of event 19
+[1:ml1] [NTC] [EVT] [Nov 25 09:21:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/20-20201125092113.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:21:13] motion_detected: Motion detected - starting event 20
+[1:ml1] [NTC] [ALL] [Nov 25 09:23:09] mlp_actions: End of event 20
+[1:ml1] [NTC] [EVT] [Nov 25 09:24:40] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/21-20201125092440.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:24:40] motion_detected: Motion detected - starting event 21
+[1:ml1] [NTC] [ALL] [Nov 25 09:26:15] mlp_actions: End of event 21
+[1:ml1] [NTC] [EVT] [Nov 25 09:35:02] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/22-20201125093502.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:35:02] motion_detected: Motion detected - starting event 22
+[1:ml1] [NTC] [ALL] [Nov 25 09:36:12] mlp_actions: End of event 22
+[1:ml1] [NTC] [EVT] [Nov 25 09:36:24] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/23-20201125093623.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:36:24] motion_detected: Motion detected - starting event 23
+[1:ml1] [NTC] [ALL] [Nov 25 09:37:25] mlp_actions: End of event 23
+[1:ml1] [NTC] [EVT] [Nov 25 09:46:06] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/24-20201125094605.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:46:06] motion_detected: Motion detected - starting event 24
+[1:ml1] [NTC] [ALL] [Nov 25 09:49:24] mlp_actions: End of event 24
+[1:ml1] [NTC] [EVT] [Nov 25 09:50:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/25-20201125095031.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 09:50:31] motion_detected: Motion detected - starting event 25
+[1:ml1] [NTC] [ALL] [Nov 25 09:52:07] mlp_actions: End of event 25
+[1:ml1] [NTC] [EVT] [Nov 25 10:05:05] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/26-20201125100505.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:05:05] motion_detected: Motion detected - starting event 26
+[1:ml1] [NTC] [ALL] [Nov 25 10:06:05] mlp_actions: End of event 26
+[1:ml1] [NTC] [EVT] [Nov 25 10:22:27] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/27-20201125102227.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:22:27] motion_detected: Motion detected - starting event 27
+[1:ml1] [NTC] [ALL] [Nov 25 10:23:37] mlp_actions: End of event 27
+[1:ml1] [NTC] [EVT] [Nov 25 10:24:06] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/28-20201125102406.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:24:06] motion_detected: Motion detected - starting event 28
+[1:ml1] [NTC] [ALL] [Nov 25 10:25:35] mlp_actions: End of event 28
+[1:ml1] [NTC] [EVT] [Nov 25 10:43:18] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/29-20201125104318.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:43:18] motion_detected: Motion detected - starting event 29
+[1:ml1] [NTC] [ALL] [Nov 25 10:44:29] mlp_actions: End of event 29
+[1:ml1] [NTC] [EVT] [Nov 25 10:55:45] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/30-20201125105544.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:55:45] motion_detected: Motion detected - starting event 30
+[1:ml1] [NTC] [ALL] [Nov 25 10:56:57] mlp_actions: End of event 30
+[1:ml1] [NTC] [EVT] [Nov 25 10:57:04] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/31-20201125105703.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:57:04] motion_detected: Motion detected - starting event 31
+[1:ml1] [NTC] [ALL] [Nov 25 10:58:04] mlp_actions: End of event 31
+[1:ml1] [NTC] [EVT] [Nov 25 10:58:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/32-20201125105809.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 10:58:09] motion_detected: Motion detected - starting event 32
+[1:ml1] [NTC] [ALL] [Nov 25 10:59:32] mlp_actions: End of event 32
+[1:ml1] [NTC] [EVT] [Nov 25 11:06:14] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/33-20201125110614.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:06:14] motion_detected: Motion detected - starting event 33
+[1:ml1] [NTC] [ALL] [Nov 25 11:07:55] mlp_actions: End of event 33
+[1:ml1] [NTC] [EVT] [Nov 25 11:12:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/34-20201125111216.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:12:16] motion_detected: Motion detected - starting event 34
+[1:ml1] [NTC] [ALL] [Nov 25 11:15:00] mlp_actions: End of event 34
+[1:ml1] [NTC] [EVT] [Nov 25 11:21:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/35-20201125112156.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:21:57] motion_detected: Motion detected - starting event 35
+[1:ml1] [NTC] [ALL] [Nov 25 11:23:00] mlp_actions: End of event 35
+[1:ml1] [NTC] [EVT] [Nov 25 11:23:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/36-20201125112353.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:23:53] motion_detected: Motion detected - starting event 36
+[1:ml1] [NTC] [ALL] [Nov 25 11:25:05] mlp_actions: End of event 36
+[1:ml1] [NTC] [EVT] [Nov 25 11:30:23] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/37-20201125113023.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:30:23] motion_detected: Motion detected - starting event 37
+[1:ml1] [NTC] [ALL] [Nov 25 11:31:30] mlp_actions: End of event 37
+[1:ml1] [NTC] [EVT] [Nov 25 11:36:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/38-20201125113651.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:36:51] motion_detected: Motion detected - starting event 38
+[1:ml1] [NTC] [ALL] [Nov 25 11:38:02] mlp_actions: End of event 38
+[1:ml1] [NTC] [EVT] [Nov 25 11:41:43] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/39-20201125114143.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:41:43] motion_detected: Motion detected - starting event 39
+[1:ml1] [NTC] [ALL] [Nov 25 11:42:45] mlp_actions: End of event 39
+[1:ml1] [NTC] [EVT] [Nov 25 11:49:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/40-20201125114921.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 11:49:21] motion_detected: Motion detected - starting event 40
+[1:ml1] [NTC] [ALL] [Nov 25 11:50:22] mlp_actions: End of event 40
+[1:ml1] [NTC] [EVT] [Nov 25 12:01:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/41-20201125120116.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:01:16] motion_detected: Motion detected - starting event 41
+[1:ml1] [NTC] [ALL] [Nov 25 12:02:18] mlp_actions: End of event 41
+[1:ml1] [NTC] [EVT] [Nov 25 12:03:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/42-20201125120340.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:03:41] motion_detected: Motion detected - starting event 42
+[1:ml1] [NTC] [ALL] [Nov 25 12:04:48] mlp_actions: End of event 42
+[1:ml1] [NTC] [EVT] [Nov 25 12:28:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/43-20201125122834.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:28:34] motion_detected: Motion detected - starting event 43
+[1:ml1] [NTC] [ALL] [Nov 25 12:29:35] mlp_actions: End of event 43
+[1:ml1] [NTC] [EVT] [Nov 25 12:34:23] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/44-20201125123423.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:34:23] motion_detected: Motion detected - starting event 44
+[1:ml1] [NTC] [ALL] [Nov 25 12:35:50] mlp_actions: End of event 44
+[1:ml1] [NTC] [EVT] [Nov 25 12:37:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/45-20201125123757.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:37:57] motion_detected: Motion detected - starting event 45
+[1:ml1] [NTC] [ALL] [Nov 25 12:39:00] mlp_actions: End of event 45
+[1:ml1] [NTC] [EVT] [Nov 25 12:39:47] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/46-20201125123946.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:39:47] motion_detected: Motion detected - starting event 46
+[1:ml1] [NTC] [ALL] [Nov 25 12:40:48] mlp_actions: End of event 46
+[1:ml1] [NTC] [EVT] [Nov 25 12:47:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/47-20201125124715.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:47:16] motion_detected: Motion detected - starting event 47
+[1:ml1] [NTC] [ALL] [Nov 25 12:48:43] mlp_actions: End of event 47
+[1:ml1] [NTC] [EVT] [Nov 25 12:48:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/48-20201125124855.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:48:55] motion_detected: Motion detected - starting event 48
+[1:ml1] [NTC] [ALL] [Nov 25 12:50:12] mlp_actions: End of event 48
+[1:ml1] [NTC] [EVT] [Nov 25 12:51:48] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/49-20201125125148.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 12:51:48] motion_detected: Motion detected - starting event 49
+[1:ml1] [NTC] [ALL] [Nov 25 12:53:55] mlp_actions: End of event 49
+[1:ml1] [NTC] [EVT] [Nov 25 13:02:01] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/50-20201125130201.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:02:01] motion_detected: Motion detected - starting event 50
+[1:ml1] [NTC] [ALL] [Nov 25 13:03:04] mlp_actions: End of event 50
+[1:ml1] [NTC] [EVT] [Nov 25 13:05:18] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/51-20201125130518.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:05:18] motion_detected: Motion detected - starting event 51
+[1:ml1] [NTC] [ALL] [Nov 25 13:07:22] mlp_actions: End of event 51
+[1:ml1] [NTC] [EVT] [Nov 25 13:10:24] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/52-20201125131024.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:10:24] motion_detected: Motion detected - starting event 52
+[1:ml1] [NTC] [ALL] [Nov 25 13:12:09] mlp_actions: End of event 52
+[1:ml1] [NTC] [EVT] [Nov 25 13:18:04] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/53-20201125131804.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:18:04] motion_detected: Motion detected - starting event 53
+[1:ml1] [NTC] [ALL] [Nov 25 13:19:14] mlp_actions: End of event 53
+[1:ml1] [NTC] [EVT] [Nov 25 13:22:10] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/54-20201125132210.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:22:10] motion_detected: Motion detected - starting event 54
+[1:ml1] [NTC] [ALL] [Nov 25 13:23:48] mlp_actions: End of event 54
+[1:ml1] [NTC] [EVT] [Nov 25 13:27:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/55-20201125132722.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:27:22] motion_detected: Motion detected - starting event 55
+[1:ml1] [NTC] [ALL] [Nov 25 13:28:24] mlp_actions: End of event 55
+[1:ml1] [NTC] [EVT] [Nov 25 13:29:18] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/56-20201125132918.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:29:18] motion_detected: Motion detected - starting event 56
+[1:ml1] [NTC] [ALL] [Nov 25 13:30:29] mlp_actions: End of event 56
+[1:ml1] [NTC] [EVT] [Nov 25 13:37:48] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/57-20201125133748.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:37:48] motion_detected: Motion detected - starting event 57
+[1:ml1] [NTC] [ALL] [Nov 25 13:38:55] mlp_actions: End of event 57
+[1:ml1] [NTC] [EVT] [Nov 25 13:44:58] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/58-20201125134457.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:44:58] motion_detected: Motion detected - starting event 58
+[1:ml1] [NTC] [ALL] [Nov 25 13:45:59] mlp_actions: End of event 58
+[1:ml1] [NTC] [EVT] [Nov 25 13:50:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/59-20201125135009.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:50:09] motion_detected: Motion detected - starting event 59
+[1:ml1] [NTC] [ALL] [Nov 25 13:51:19] mlp_actions: End of event 59
+[1:ml1] [NTC] [EVT] [Nov 25 13:53:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/60-20201125135309.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 13:53:09] motion_detected: Motion detected - starting event 60
+[7177864:motion] [NTC] [ALL] [Nov 25 19:44:13] motion_startup: Using log type (ALL) log level (NTC)
+[7177864:motion] [NTC] [ALL] [Nov 25 19:44:13] become_daemon: Motion going to daemon mode
+[7177864:motion] [NTC] [ALL] [Nov 25 19:44:13] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1245
+[7177864:motion] [NTC] [ALL] [Nov 25 19:44:13] motion_startup: Motion running as daemon process
+[7177864:motion] [NTC] [ENC] [Nov 25 19:44:13] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 25 19:44:13] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 25 19:44:13] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 25 19:44:13] main: Waiting for threads to finish, pid: 1245
+[1:ml1] [NTC] [ALL] [Nov 25 19:44:13] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 25 19:44:13] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 25 19:44:13] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 25 19:44:13] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 25 19:44:13] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 25 19:44:13] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 25 19:44:13] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 25 19:46:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201125194622.mkv
+[1:ml1] [NTC] [ALL] [Nov 25 19:46:22] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 25 19:47:26] mlp_actions: End of event 1
+[31209096:motion] [NTC] [ALL] [Nov 26 10:15:11] motion_startup: Using log type (ALL) log level (NTC)
+[31209096:motion] [NTC] [ALL] [Nov 26 10:15:11] become_daemon: Motion going to daemon mode
+[31209096:motion] [NTC] [ALL] [Nov 26 10:15:11] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1218
+[31209096:motion] [NTC] [ALL] [Nov 26 10:15:11] motion_startup: Motion running as daemon process
+[31209096:motion] [NTC] [ENC] [Nov 26 10:15:11] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 26 10:15:11] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 26 10:15:11] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 26 10:15:11] main: Waiting for threads to finish, pid: 1218
+[1:ml1] [NTC] [ALL] [Nov 26 10:15:11] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 26 10:15:11] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 26 10:15:11] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 26 10:15:11] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 26 10:15:12] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 26 10:15:12] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 26 10:15:12] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 26 10:15:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201126101521.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:15:21] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 26 10:16:22] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 26 10:19:43] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/02-20201126101943.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:19:43] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 26 10:20:44] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 26 10:40:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/03-20201126104013.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:40:13] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 26 10:41:13] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 26 10:45:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/04-20201126104528.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:45:29] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 26 10:47:05] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 26 10:51:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/05-20201126105152.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:51:53] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 26 10:52:54] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 26 10:53:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/06-20201126105341.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:53:41] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 26 10:54:41] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 26 10:55:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/07-20201126105555.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:55:55] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 26 10:57:11] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 26 10:59:02] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/08-20201126105902.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 10:59:02] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 26 11:00:03] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Nov 26 11:02:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/09-20201126110229.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:02:29] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Nov 26 11:03:30] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Nov 26 11:05:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/10-20201126110515.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:05:16] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Nov 26 11:06:31] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Nov 26 11:16:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/11-20201126111631.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:16:31] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Nov 26 11:17:33] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Nov 26 11:21:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/12-20201126112112.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:21:13] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Nov 26 11:22:13] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Nov 26 11:23:04] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/13-20201126112304.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:23:04] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Nov 26 11:25:04] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Nov 26 11:30:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/14-20201126113028.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:30:28] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Nov 26 11:31:28] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Nov 26 11:33:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/15-20201126113328.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:33:29] motion_detected: Motion detected - starting event 15
+[1:ml1] [NTC] [ALL] [Nov 26 11:34:30] mlp_actions: End of event 15
+[1:ml1] [NTC] [EVT] [Nov 26 11:37:54] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/16-20201126113754.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:37:54] motion_detected: Motion detected - starting event 16
+[1:ml1] [NTC] [ALL] [Nov 26 11:38:56] mlp_actions: End of event 16
+[1:ml1] [NTC] [EVT] [Nov 26 11:39:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/17-20201126113957.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:39:57] motion_detected: Motion detected - starting event 17
+[1:ml1] [NTC] [ALL] [Nov 26 11:41:08] mlp_actions: End of event 17
+[1:ml1] [NTC] [EVT] [Nov 26 11:44:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/18-20201126114407.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:44:08] motion_detected: Motion detected - starting event 18
+[1:ml1] [NTC] [ALL] [Nov 26 11:45:10] mlp_actions: End of event 18
+[1:ml1] [NTC] [EVT] [Nov 26 11:46:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/19-20201126114640.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:46:41] motion_detected: Motion detected - starting event 19
+[1:ml1] [NTC] [ALL] [Nov 26 11:49:16] mlp_actions: End of event 19
+[1:ml1] [NTC] [EVT] [Nov 26 11:49:38] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/20-20201126114938.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 11:49:38] motion_detected: Motion detected - starting event 20
+[1:ml1] [NTC] [ALL] [Nov 26 11:50:39] mlp_actions: End of event 20
+[1:ml1] [NTC] [EVT] [Nov 26 12:01:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/21-20201126120151.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:01:52] motion_detected: Motion detected - starting event 21
+[1:ml1] [NTC] [ALL] [Nov 26 12:03:32] mlp_actions: End of event 21
+[1:ml1] [NTC] [EVT] [Nov 26 12:04:54] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/22-20201126120453.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:04:54] motion_detected: Motion detected - starting event 22
+[1:ml1] [NTC] [ALL] [Nov 26 12:05:54] mlp_actions: End of event 22
+[1:ml1] [NTC] [EVT] [Nov 26 12:09:46] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/23-20201126120946.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:09:46] motion_detected: Motion detected - starting event 23
+[1:ml1] [NTC] [ALL] [Nov 26 12:10:59] mlp_actions: End of event 23
+[1:ml1] [NTC] [EVT] [Nov 26 12:13:05] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/24-20201126121305.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:13:05] motion_detected: Motion detected - starting event 24
+[1:ml1] [NTC] [ALL] [Nov 26 12:14:25] mlp_actions: End of event 24
+[1:ml1] [NTC] [EVT] [Nov 26 12:22:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/25-20201126122249.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:22:50] motion_detected: Motion detected - starting event 25
+[1:ml1] [NTC] [ALL] [Nov 26 12:24:18] mlp_actions: End of event 25
+[1:ml1] [NTC] [EVT] [Nov 26 12:36:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/26-20201126123607.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 12:36:08] motion_detected: Motion detected - starting event 26
+[1:ml1] [NTC] [ALL] [Nov 26 12:37:14] mlp_actions: End of event 26
+[1:ml1] [NTC] [EVT] [Nov 26 13:22:35] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/27-20201126132235.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:22:35] motion_detected: Motion detected - starting event 27
+[1:ml1] [NTC] [ALL] [Nov 26 13:23:48] mlp_actions: End of event 27
+[1:ml1] [NTC] [EVT] [Nov 26 13:26:43] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/28-20201126132643.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:26:43] motion_detected: Motion detected - starting event 28
+[1:ml1] [NTC] [ALL] [Nov 26 13:27:48] mlp_actions: End of event 28
+[1:ml1] [NTC] [EVT] [Nov 26 13:29:19] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/29-20201126132919.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:29:19] motion_detected: Motion detected - starting event 29
+[1:ml1] [NTC] [ALL] [Nov 26 13:30:47] mlp_actions: End of event 29
+[1:ml1] [NTC] [EVT] [Nov 26 13:31:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/30-20201126133141.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:31:42] motion_detected: Motion detected - starting event 30
+[1:ml1] [NTC] [ALL] [Nov 26 13:33:28] mlp_actions: End of event 30
+[1:ml1] [NTC] [EVT] [Nov 26 13:33:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/31-20201126133328.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:33:28] motion_detected: Motion detected - starting event 31
+[1:ml1] [NTC] [ALL] [Nov 26 13:38:47] mlp_actions: End of event 31
+[1:ml1] [NTC] [EVT] [Nov 26 13:39:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/32-20201126133951.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:39:51] motion_detected: Motion detected - starting event 32
+[1:ml1] [NTC] [ALL] [Nov 26 13:40:53] mlp_actions: End of event 32
+[1:ml1] [NTC] [EVT] [Nov 26 13:44:37] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/33-20201126134437.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:44:37] motion_detected: Motion detected - starting event 33
+[1:ml1] [NTC] [ALL] [Nov 26 13:45:40] mlp_actions: End of event 33
+[1:ml1] [NTC] [EVT] [Nov 26 13:56:07] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/34-20201126135607.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 13:56:07] motion_detected: Motion detected - starting event 34
+[1:ml1] [NTC] [ALL] [Nov 26 13:57:09] mlp_actions: End of event 34
+[1:ml1] [NTC] [EVT] [Nov 26 14:16:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/35-20201126141613.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 14:16:13] motion_detected: Motion detected - starting event 35
+[1:ml1] [NTC] [ALL] [Nov 26 14:17:14] mlp_actions: End of event 35
+[1:ml1] [NTC] [EVT] [Nov 26 14:23:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/36-20201126142316.mkv
+[1:ml1] [NTC] [ALL] [Nov 26 14:23:16] motion_detected: Motion detected - starting event 36
+[1:ml1] [NTC] [ALL] [Nov 26 14:24:17] mlp_actions: End of event 36
+[5891720:motion] [NTC] [ALL] [Nov 27 12:55:54] motion_startup: Using log type (ALL) log level (NTC)
+[5891720:motion] [NTC] [ALL] [Nov 27 12:55:54] become_daemon: Motion going to daemon mode
+[5891720:motion] [NTC] [ALL] [Nov 27 12:55:54] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1286
+[5891720:motion] [NTC] [ALL] [Nov 27 12:55:54] motion_startup: Motion running as daemon process
+[5891720:motion] [NTC] [ENC] [Nov 27 12:55:54] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 27 12:55:54] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 27 12:55:54] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 27 12:55:54] main: Waiting for threads to finish, pid: 1286
+[1:ml1] [NTC] [ALL] [Nov 27 12:55:54] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 27 12:55:54] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 27 12:55:54] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 27 12:55:54] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 27 12:55:54] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 27 12:55:54] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 27 12:55:54] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 27 13:14:25] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201127131424.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 13:14:25] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 27 13:15:25] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 27 13:21:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/02-20201127132122.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 13:21:22] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 27 13:24:34] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 27 13:49:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/03-20201127134940.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 13:49:41] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 27 13:50:41] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 27 14:00:19] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/04-20201127140018.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 14:00:19] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 27 14:01:19] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 27 14:02:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/05-20201127140208.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 14:02:08] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 27 14:03:19] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 27 14:24:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/06-20201127142431.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 14:24:31] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 27 14:25:31] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 27 15:02:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/07-20201127150251.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 15:02:51] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 27 15:06:51] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 27 15:20:44] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/08-20201127152043.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 15:20:44] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 27 15:21:44] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Nov 27 16:06:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/09-20201127160613.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 16:06:13] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Nov 27 16:07:18] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Nov 27 17:11:23] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/10-20201127171123.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 17:11:23] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Nov 27 17:12:24] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Nov 27 17:39:26] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/11-20201127173926.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 17:39:26] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Nov 27 17:41:46] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Nov 27 18:03:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/12-20201127180330.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 18:03:31] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Nov 27 18:04:31] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Nov 27 18:41:46] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/13-20201127184146.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 18:41:46] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Nov 27 18:43:43] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Nov 27 19:10:37] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/14-20201127191037.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 19:10:37] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Nov 27 19:12:07] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Nov 27 19:31:45] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/15-20201127193144.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 19:31:45] motion_detected: Motion detected - starting event 15
+[1:ml1] [NTC] [ALL] [Nov 27 19:32:45] mlp_actions: End of event 15
+[1:ml1] [NTC] [EVT] [Nov 27 19:44:49] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/16-20201127194449.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 19:44:49] motion_detected: Motion detected - starting event 16
+[1:ml1] [NTC] [ALL] [Nov 27 19:45:51] mlp_actions: End of event 16
+[1:ml1] [NTC] [EVT] [Nov 27 19:48:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/17-20201127194828.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 19:48:28] motion_detected: Motion detected - starting event 17
+[1:ml1] [NTC] [ALL] [Nov 27 19:49:39] mlp_actions: End of event 17
+[1:ml1] [NTC] [EVT] [Nov 27 19:50:44] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/18-20201127195044.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 19:50:44] motion_detected: Motion detected - starting event 18
+[1:ml1] [NTC] [ALL] [Nov 27 19:52:49] mlp_actions: End of event 18
+[1:ml1] [NTC] [EVT] [Nov 27 21:34:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/19-20201127213408.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 21:34:08] motion_detected: Motion detected - starting event 19
+[1:ml1] [NTC] [ALL] [Nov 27 21:35:57] mlp_actions: End of event 19
+[1:ml1] [NTC] [EVT] [Nov 27 22:48:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/20-20201127224852.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 22:48:53] motion_detected: Motion detected - starting event 20
+[1:ml1] [NTC] [ALL] [Nov 27 22:50:02] mlp_actions: End of event 20
+[1:ml1] [NTC] [EVT] [Nov 27 22:51:20] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/21-20201127225120.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 22:51:20] motion_detected: Motion detected - starting event 21
+[1:ml1] [NTC] [ALL] [Nov 27 22:52:30] mlp_actions: End of event 21
+[1:ml1] [NTC] [EVT] [Nov 27 23:10:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/22-20201127231021.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 23:10:22] motion_detected: Motion detected - starting event 22
+[1:ml1] [NTC] [ALL] [Nov 27 23:11:32] mlp_actions: End of event 22
+[1:ml1] [NTC] [EVT] [Nov 27 23:17:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/23-20201127231708.mkv
+[1:ml1] [NTC] [ALL] [Nov 27 23:17:09] motion_detected: Motion detected - starting event 23
+[1:ml1] [NTC] [ALL] [Nov 27 23:18:19] mlp_actions: End of event 23
+[1:ml1] [NTC] [EVT] [Nov 28 10:30:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/24-20201128103016.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 10:30:16] motion_detected: Motion detected - starting event 24
+[1:ml1] [NTC] [ALL] [Nov 28 10:31:58] mlp_actions: End of event 24
+[1:ml1] [NTC] [EVT] [Nov 28 10:34:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/25-20201128103434.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 10:34:34] motion_detected: Motion detected - starting event 25
+[1:ml1] [NTC] [ALL] [Nov 28 10:36:11] mlp_actions: End of event 25
+[1:ml1] [NTC] [EVT] [Nov 28 10:43:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/26-20201128104352.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 10:43:53] motion_detected: Motion detected - starting event 26
+[1:ml1] [NTC] [ALL] [Nov 28 10:45:04] mlp_actions: End of event 26
+[1:ml1] [NTC] [EVT] [Nov 28 11:12:49] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/27-20201128111248.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 11:12:49] motion_detected: Motion detected - starting event 27
+[1:ml1] [NTC] [ALL] [Nov 28 11:14:23] mlp_actions: End of event 27
+[1:ml1] [NTC] [EVT] [Nov 28 11:19:16] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/28-20201128111915.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 11:19:16] motion_detected: Motion detected - starting event 28
+[1:ml1] [NTC] [ALL] [Nov 28 11:20:34] mlp_actions: End of event 28
+[1:ml1] [NTC] [EVT] [Nov 28 11:47:36] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/29-20201128114736.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 11:47:36] motion_detected: Motion detected - starting event 29
+[1:ml1] [NTC] [ALL] [Nov 28 11:50:28] mlp_actions: End of event 29
+[1:ml1] [NTC] [EVT] [Nov 28 12:00:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/30-20201128120020.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:00:21] motion_detected: Motion detected - starting event 30
+[1:ml1] [NTC] [ALL] [Nov 28 12:02:15] mlp_actions: End of event 30
+[1:ml1] [NTC] [EVT] [Nov 28 12:35:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/31-20201128123508.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:35:08] motion_detected: Motion detected - starting event 31
+[1:ml1] [NTC] [ALL] [Nov 28 12:36:09] mlp_actions: End of event 31
+[1:ml1] [NTC] [EVT] [Nov 28 12:36:30] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/32-20201128123630.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:36:30] motion_detected: Motion detected - starting event 32
+[1:ml1] [NTC] [ALL] [Nov 28 12:37:31] mlp_actions: End of event 32
+[1:ml1] [NTC] [EVT] [Nov 28 12:42:25] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/33-20201128124225.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:42:25] motion_detected: Motion detected - starting event 33
+[1:ml1] [NTC] [ALL] [Nov 28 12:43:51] mlp_actions: End of event 33
+[1:ml1] [NTC] [EVT] [Nov 28 12:50:26] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/34-20201128125025.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:50:26] motion_detected: Motion detected - starting event 34
+[1:ml1] [NTC] [ALL] [Nov 28 12:52:55] mlp_actions: End of event 34
+[1:ml1] [NTC] [EVT] [Nov 28 12:53:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/35-20201128125354.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 12:53:55] motion_detected: Motion detected - starting event 35
+[1:ml1] [NTC] [ALL] [Nov 28 12:54:55] mlp_actions: End of event 35
+[1:ml1] [NTC] [EVT] [Nov 28 13:03:03] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/36-20201128130303.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 13:03:03] motion_detected: Motion detected - starting event 36
+[1:ml1] [NTC] [ALL] [Nov 28 13:04:14] mlp_actions: End of event 36
+[1:ml1] [NTC] [EVT] [Nov 28 13:26:30] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/37-20201128132630.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 13:26:30] motion_detected: Motion detected - starting event 37
+[1:ml1] [NTC] [ALL] [Nov 28 13:27:30] mlp_actions: End of event 37
+[1:ml1] [NTC] [EVT] [Nov 28 13:48:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/38-20201128134827.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 13:48:28] motion_detected: Motion detected - starting event 38
+[1:ml1] [NTC] [ALL] [Nov 28 13:49:37] mlp_actions: End of event 38
+[1:ml1] [NTC] [EVT] [Nov 28 13:52:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/39-20201128135251.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 13:52:52] motion_detected: Motion detected - starting event 39
+[1:ml1] [NTC] [ALL] [Nov 28 13:54:11] mlp_actions: End of event 39
+[1:ml1] [NTC] [EVT] [Nov 28 14:07:43] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/40-20201128140743.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 14:07:43] motion_detected: Motion detected - starting event 40
+[1:ml1] [NTC] [ALL] [Nov 28 14:08:53] mlp_actions: End of event 40
+[1:ml1] [NTC] [EVT] [Nov 28 15:21:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/41-20201128152128.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 15:21:28] motion_detected: Motion detected - starting event 41
+[1:ml1] [NTC] [ALL] [Nov 28 15:22:28] mlp_actions: End of event 41
+[1:ml1] [NTC] [EVT] [Nov 28 15:24:38] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/42-20201128152438.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 15:24:38] motion_detected: Motion detected - starting event 42
+[1:ml1] [NTC] [ALL] [Nov 28 15:25:50] mlp_actions: End of event 42
+[1:ml1] [NTC] [EVT] [Nov 28 15:26:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/43-20201128152631.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 15:26:31] motion_detected: Motion detected - starting event 43
+[1:ml1] [NTC] [ALL] [Nov 28 15:27:32] mlp_actions: End of event 43
+[1:ml1] [NTC] [EVT] [Nov 28 15:33:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/44-20201128153308.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 15:33:08] motion_detected: Motion detected - starting event 44
+[1:ml1] [NTC] [ALL] [Nov 28 15:34:19] mlp_actions: End of event 44
+[1:ml1] [NTC] [EVT] [Nov 28 16:32:40] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/45-20201128163240.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 16:32:40] motion_detected: Motion detected - starting event 45
+[1:ml1] [NTC] [ALL] [Nov 28 16:33:50] mlp_actions: End of event 45
+[1:ml1] [NTC] [EVT] [Nov 28 17:23:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/46-20201128172351.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 17:23:51] motion_detected: Motion detected - starting event 46
+[1:ml1] [NTC] [ALL] [Nov 28 17:25:24] mlp_actions: End of event 46
+[1:ml1] [NTC] [EVT] [Nov 28 17:32:59] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/47-20201128173258.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 17:32:59] motion_detected: Motion detected - starting event 47
+[1:ml1] [NTC] [ALL] [Nov 28 17:34:13] mlp_actions: End of event 47
+[1:ml1] [NTC] [EVT] [Nov 28 18:58:17] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/48-20201128185816.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 18:58:17] motion_detected: Motion detected - starting event 48
+[1:ml1] [NTC] [ALL] [Nov 28 18:59:26] mlp_actions: End of event 48
+[1:ml1] [NTC] [EVT] [Nov 28 19:01:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/49-20201128190108.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:01:08] motion_detected: Motion detected - starting event 49
+[1:ml1] [NTC] [ALL] [Nov 28 19:02:08] mlp_actions: End of event 49
+[1:ml1] [NTC] [EVT] [Nov 28 19:19:44] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/50-20201128191943.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:19:44] motion_detected: Motion detected - starting event 50
+[1:ml1] [NTC] [ALL] [Nov 28 19:20:44] mlp_actions: End of event 50
+[1:ml1] [NTC] [EVT] [Nov 28 19:46:00] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/51-20201128194559.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:46:00] motion_detected: Motion detected - starting event 51
+[1:ml1] [NTC] [ALL] [Nov 28 19:47:00] mlp_actions: End of event 51
+[1:ml1] [NTC] [EVT] [Nov 28 19:59:19] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/52-20201128195919.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:59:19] motion_detected: Motion detected - starting event 52
+[1:ml1] [NTC] [ALL] [Nov 28 20:01:02] mlp_actions: End of event 52
+[1:ml1] [NTC] [EVT] [Nov 28 20:02:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/53-20201128200229.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 20:02:29] motion_detected: Motion detected - starting event 53
+[1:ml1] [NTC] [ALL] [Nov 28 20:03:45] mlp_actions: End of event 53
+[1:ml1] [NTC] [EVT] [Nov 28 20:21:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/54-20201128202129.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 20:21:29] motion_detected: Motion detected - starting event 54
+[1:ml1] [NTC] [ALL] [Nov 28 20:22:30] mlp_actions: End of event 54
+[1:ml1] [NTC] [EVT] [Nov 28 21:03:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/55-20201128210357.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:03:57] motion_detected: Motion detected - starting event 55
+[1:ml1] [NTC] [ALL] [Nov 28 21:05:10] mlp_actions: End of event 55
+[1:ml1] [NTC] [EVT] [Nov 28 21:07:43] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/56-20201128210743.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:07:43] motion_detected: Motion detected - starting event 56
+[1:ml1] [NTC] [ALL] [Nov 28 21:08:44] mlp_actions: End of event 56
+[1:ml1] [NTC] [EVT] [Nov 28 21:13:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/57-20201128211349.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:13:50] motion_detected: Motion detected - starting event 57
+[1:ml1] [NTC] [ALL] [Nov 28 21:14:50] mlp_actions: End of event 57
+[1:ml1] [NTC] [EVT] [Nov 28 21:25:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/58-20201128212555.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:25:55] motion_detected: Motion detected - starting event 58
+[1:ml1] [NTC] [ALL] [Nov 28 21:26:55] mlp_actions: End of event 58
+[1:ml1] [NTC] [EVT] [Nov 28 21:29:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/59-20201128212921.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:29:21] motion_detected: Motion detected - starting event 59
+[1:ml1] [NTC] [ALL] [Nov 28 21:31:10] mlp_actions: End of event 59
+[1:ml1] [NTC] [EVT] [Nov 28 21:33:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/60-20201128213352.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:33:52] motion_detected: Motion detected - starting event 60
+[1:ml1] [NTC] [ALL] [Nov 28 21:36:04] mlp_actions: End of event 60
+[1:ml1] [NTC] [EVT] [Nov 28 21:38:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/61-20201128213842.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:38:42] motion_detected: Motion detected - starting event 61
+[1:ml1] [NTC] [ALL] [Nov 28 21:41:21] mlp_actions: End of event 61
+[1:ml1] [NTC] [EVT] [Nov 28 21:45:35] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/62-20201128214535.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 21:45:35] motion_detected: Motion detected - starting event 62
+[1:ml1] [NTC] [ALL] [Nov 28 21:46:36] mlp_actions: End of event 62
+[1:ml1] [NTC] [EVT] [Nov 28 22:45:44] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/63-20201128224544.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 22:45:44] motion_detected: Motion detected - starting event 63
+[1:ml1] [NTC] [ALL] [Nov 28 22:46:45] mlp_actions: End of event 63
+[1:ml1] [NTC] [EVT] [Nov 28 23:07:33] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/64-20201128230733.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:07:33] motion_detected: Motion detected - starting event 64
+[1:ml1] [NTC] [ALL] [Nov 28 23:08:52] mlp_actions: End of event 64
+[1:ml1] [NTC] [EVT] [Nov 28 23:10:40] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/65-20201128231040.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:10:40] motion_detected: Motion detected - starting event 65
+[1:ml1] [NTC] [ALL] [Nov 28 23:11:41] mlp_actions: End of event 65
+[1:ml1] [NTC] [EVT] [Nov 28 23:40:04] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/66-20201128234004.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:40:04] motion_detected: Motion detected - starting event 66
+[1:ml1] [NTC] [ALL] [Nov 28 23:41:05] mlp_actions: End of event 66
+[1:ml1] [NTC] [EVT] [Nov 28 23:58:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/67-20201128235831.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:58:31] motion_detected: Motion detected - starting event 67
+[1:ml1] [NTC] [ALL] [Nov 28 23:59:31] mlp_actions: End of event 67
+[1:ml1] [NTC] [EVT] [Nov 29 00:01:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/68-20201129000113.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 00:01:13] motion_detected: Motion detected - starting event 68
+[1:ml1] [NTC] [ALL] [Nov 29 00:02:13] mlp_actions: End of event 68
+[1:ml1] [NTC] [EVT] [Nov 29 00:02:45] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/69-20201129000245.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 00:02:45] motion_detected: Motion detected - starting event 69
+[1:ml1] [NTC] [ALL] [Nov 29 00:03:47] mlp_actions: End of event 69
+[1:ml1] [NTC] [EVT] [Nov 29 00:04:32] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/70-20201129000432.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 00:04:32] motion_detected: Motion detected - starting event 70
+[1:ml1] [NTC] [ALL] [Nov 29 00:05:53] mlp_actions: End of event 70
+[1:ml1] [NTC] [EVT] [Nov 29 01:06:24] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/71-20201129010624.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 01:06:24] motion_detected: Motion detected - starting event 71
+[1:ml1] [NTC] [ALL] [Nov 29 01:08:10] mlp_actions: End of event 71
+[1:ml1] [NTC] [EVT] [Nov 29 01:08:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/72-20201129010857.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 01:08:57] motion_detected: Motion detected - starting event 72
+[1:ml1] [NTC] [ALL] [Nov 29 01:10:32] mlp_actions: End of event 72
+[1:ml1] [NTC] [EVT] [Nov 29 01:26:48] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/73-20201129012648.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 01:26:48] motion_detected: Motion detected - starting event 73
+[1:ml1] [NTC] [ALL] [Nov 29 01:27:50] mlp_actions: End of event 73
+[1:ml1] [NTC] [EVT] [Nov 29 09:37:02] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/74-20201129093702.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 09:37:02] motion_detected: Motion detected - starting event 74
+[1:ml1] [NTC] [ALL] [Nov 29 09:38:04] mlp_actions: End of event 74
+[1:ml1] [NTC] [EVT] [Nov 29 09:39:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/75-20201129093931.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 09:39:31] motion_detected: Motion detected - starting event 75
+[1:ml1] [NTC] [ALL] [Nov 29 09:40:32] mlp_actions: End of event 75
+[1:ml1] [NTC] [EVT] [Nov 29 10:01:58] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/76-20201129100158.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:01:58] motion_detected: Motion detected - starting event 76
+[1:ml1] [NTC] [ALL] [Nov 29 10:04:06] mlp_actions: End of event 76
+[1:ml1] [NTC] [EVT] [Nov 29 10:05:59] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/77-20201129100559.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:05:59] motion_detected: Motion detected - starting event 77
+[1:ml1] [NTC] [ALL] [Nov 29 10:09:22] mlp_actions: End of event 77
+[1:ml1] [NTC] [EVT] [Nov 29 10:09:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/78-20201129100942.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:09:42] motion_detected: Motion detected - starting event 78
+[1:ml1] [NTC] [ALL] [Nov 29 10:10:52] mlp_actions: End of event 78
+[1:ml1] [NTC] [EVT] [Nov 29 10:14:39] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/79-20201129101439.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:14:39] motion_detected: Motion detected - starting event 79
+[1:ml1] [NTC] [ALL] [Nov 29 10:18:17] mlp_actions: End of event 79
+[1:ml1] [NTC] [EVT] [Nov 29 10:26:19] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/80-20201129102619.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:26:19] motion_detected: Motion detected - starting event 80
+[1:ml1] [NTC] [ALL] [Nov 29 10:28:12] mlp_actions: End of event 80
+[1:ml1] [NTC] [EVT] [Nov 29 10:29:49] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/81-20201129102949.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:29:49] motion_detected: Motion detected - starting event 81
+[1:ml1] [NTC] [ALL] [Nov 29 10:37:32] mlp_actions: End of event 81
+[1:ml1] [NTC] [EVT] [Nov 29 10:38:10] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/82-20201129103810.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:38:10] motion_detected: Motion detected - starting event 82
+[1:ml1] [NTC] [ALL] [Nov 29 10:39:19] mlp_actions: End of event 82
+[1:ml1] [NTC] [EVT] [Nov 29 10:40:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/83-20201129104015.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:40:15] motion_detected: Motion detected - starting event 83
+[1:ml1] [NTC] [ALL] [Nov 29 10:41:44] mlp_actions: End of event 83
+[1:ml1] [NTC] [EVT] [Nov 29 10:41:49] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/84-20201129104148.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:41:49] motion_detected: Motion detected - starting event 84
+[1:ml1] [NTC] [ALL] [Nov 29 10:47:33] mlp_actions: End of event 84
+[1:ml1] [NTC] [EVT] [Nov 29 10:48:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/85-20201129104808.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:48:09] motion_detected: Motion detected - starting event 85
+[1:ml1] [NTC] [ALL] [Nov 29 10:49:12] mlp_actions: End of event 85
+[1:ml1] [NTC] [EVT] [Nov 29 10:52:39] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/86-20201129105239.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:52:39] motion_detected: Motion detected - starting event 86
+[1:ml1] [NTC] [ALL] [Nov 29 10:53:43] mlp_actions: End of event 86
+[1:ml1] [NTC] [EVT] [Nov 29 10:55:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/87-20201129105509.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:55:09] motion_detected: Motion detected - starting event 87
+[1:ml1] [NTC] [ALL] [Nov 29 10:56:10] mlp_actions: End of event 87
+[1:ml1] [NTC] [EVT] [Nov 29 10:57:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/88-20201129105755.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:57:55] motion_detected: Motion detected - starting event 88
+[1:ml1] [NTC] [ALL] [Nov 29 10:58:57] mlp_actions: End of event 88
+[1:ml1] [NTC] [EVT] [Nov 29 10:59:17] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/89-20201129105917.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 10:59:17] motion_detected: Motion detected - starting event 89
+[1:ml1] [NTC] [ALL] [Nov 29 11:00:18] mlp_actions: End of event 89
+[1:ml1] [NTC] [EVT] [Nov 29 11:09:47] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/90-20201129110947.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:09:47] motion_detected: Motion detected - starting event 90
+[1:ml1] [NTC] [ALL] [Nov 29 11:10:59] mlp_actions: End of event 90
+[1:ml1] [NTC] [EVT] [Nov 29 11:21:24] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/91-20201129112124.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:21:24] motion_detected: Motion detected - starting event 91
+[1:ml1] [NTC] [ALL] [Nov 29 11:22:52] mlp_actions: End of event 91
+[1:ml1] [NTC] [EVT] [Nov 29 11:26:58] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/92-20201129112657.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:26:58] motion_detected: Motion detected - starting event 92
+[1:ml1] [NTC] [ALL] [Nov 29 11:27:58] mlp_actions: End of event 92
+[1:ml1] [NTC] [EVT] [Nov 29 11:43:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/93-20201129114313.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:43:13] motion_detected: Motion detected - starting event 93
+[1:ml1] [NTC] [ALL] [Nov 29 11:44:14] mlp_actions: End of event 93
+[1:ml1] [NTC] [EVT] [Nov 29 11:51:10] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/94-20201129115110.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:51:10] motion_detected: Motion detected - starting event 94
+[1:ml1] [NTC] [ALL] [Nov 29 11:52:30] mlp_actions: End of event 94
+[1:ml1] [NTC] [EVT] [Nov 29 11:53:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/95-20201129115308.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 11:53:08] motion_detected: Motion detected - starting event 95
+[1:ml1] [NTC] [ALL] [Nov 29 11:54:09] mlp_actions: End of event 95
+[1:ml1] [NTC] [EVT] [Nov 29 12:06:27] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/96-20201129120627.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:06:27] motion_detected: Motion detected - starting event 96
+[1:ml1] [NTC] [ALL] [Nov 29 12:09:50] mlp_actions: End of event 96
+[1:ml1] [NTC] [EVT] [Nov 29 12:11:01] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/97-20201129121100.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:11:01] motion_detected: Motion detected - starting event 97
+[1:ml1] [NTC] [ALL] [Nov 29 12:13:39] mlp_actions: End of event 97
+[1:ml1] [NTC] [EVT] [Nov 29 12:13:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/98-20201129121355.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:13:55] motion_detected: Motion detected - starting event 98
+[1:ml1] [NTC] [ALL] [Nov 29 12:19:21] mlp_actions: End of event 98
+[1:ml1] [NTC] [EVT] [Nov 29 12:20:01] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/99-20201129122001.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:20:01] motion_detected: Motion detected - starting event 99
+[1:ml1] [NTC] [ALL] [Nov 29 12:22:22] mlp_actions: End of event 99
+[1:ml1] [NTC] [EVT] [Nov 29 12:22:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/100-20201129122230.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:22:31] motion_detected: Motion detected - starting event 100
+[1:ml1] [NTC] [ALL] [Nov 29 12:23:37] mlp_actions: End of event 100
+[1:ml1] [NTC] [EVT] [Nov 29 12:24:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/101-20201129122421.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:24:21] motion_detected: Motion detected - starting event 101
+[1:ml1] [NTC] [ALL] [Nov 29 12:25:23] mlp_actions: End of event 101
+[1:ml1] [NTC] [EVT] [Nov 29 12:26:39] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/102-20201129122638.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:26:39] motion_detected: Motion detected - starting event 102
+[1:ml1] [NTC] [ALL] [Nov 29 12:29:06] mlp_actions: End of event 102
+[1:ml1] [NTC] [EVT] [Nov 29 12:29:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/103-20201129122949.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:29:50] motion_detected: Motion detected - starting event 103
+[1:ml1] [NTC] [ALL] [Nov 29 12:30:58] mlp_actions: End of event 103
+[22566536:motion] [NTC] [ALL] [Nov 30 20:05:20] motion_startup: Using log type (ALL) log level (NTC)
+[22566536:motion] [NTC] [ALL] [Nov 30 20:05:20] become_daemon: Motion going to daemon mode
+[22566536:motion] [NTC] [ALL] [Nov 30 20:05:20] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1255
+[22566536:motion] [NTC] [ALL] [Nov 30 20:05:20] motion_startup: Motion running as daemon process
+[22566536:motion] [NTC] [ENC] [Nov 30 20:05:20] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 30 20:05:20] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 30 20:05:20] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 30 20:05:20] main: Waiting for threads to finish, pid: 1255
+[1:ml1] [NTC] [ALL] [Nov 30 20:05:20] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 30 20:05:20] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 30 20:05:20] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 20:05:20] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 30 20:05:21] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 30 20:05:21] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 30 20:05:21] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 30 20:48:01] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/01-20201130204800.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 20:48:01] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 30 20:49:10] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 30 20:50:19] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/02-20201130205019.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 20:50:19] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 30 20:51:57] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 30 20:52:04] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/03-20201130205204.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 20:52:04] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 30 20:53:17] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 30 20:59:11] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/04-20201130205911.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 20:59:11] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 30 21:00:32] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 30 21:34:10] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/05-20201130213409.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 21:34:10] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 30 21:36:09] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 30 21:36:36] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/06-20201130213635.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 21:36:36] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 30 21:38:46] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 30 21:48:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/07-20201130214828.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 21:48:28] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 30 21:49:38] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 30 22:37:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/08-20201130223755.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 22:37:55] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 30 22:40:20] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Dec 01 08:53:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/09-20201201085334.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 08:53:34] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Dec 01 08:55:01] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Dec 01 09:36:32] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/10-20201201093632.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 09:36:32] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Dec 01 09:37:33] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Dec 01 10:22:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/11-20201201102251.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:22:51] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Dec 01 10:24:43] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Dec 01 10:28:14] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/12-20201201102814.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:28:14] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Dec 01 10:29:15] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Dec 01 10:45:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/13-20201201104531.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:45:31] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Dec 01 10:46:37] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Dec 01 10:47:26] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/14-20201201104726.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:47:26] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Dec 01 10:48:39] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Dec 01 10:49:00] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor3/15-20201201104900.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:49:00] motion_detected: Motion detected - starting event 15

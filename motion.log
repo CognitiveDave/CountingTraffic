@@ -1,0 +1,683 @@
+[30099080:motion] [NTC] [ALL] [Nov 24 19:01:56] motion_startup: Using log type (ALL) log level (NTC)
+[30099080:motion] [NTC] [ALL] [Nov 24 19:01:56] become_daemon: Motion going to daemon mode
+[30099080:motion] [NTC] [ALL] [Nov 24 19:01:56] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1638
+[30099080:motion] [NTC] [ALL] [Nov 24 19:01:56] motion_startup: Motion running as daemon process
+[30099080:motion] [NTC] [ENC] [Nov 24 19:01:56] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 24 19:01:56] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 24 19:01:56] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 24 19:01:56] main: Waiting for threads to finish, pid: 1638
+[1:ml1] [NTC] [ALL] [Nov 24 19:01:56] motion_init: Camera 0 started: motion detection Enabled
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 24 19:01:56] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_start: Using videodevice /dev/video0 and input -1
+[0:wc0] [NTC] [STR] [Nov 24 19:01:56] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:01:56] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 24 19:01:57] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 24 19:01:57] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 24 19:01:57] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 24 19:02:02] event_newfile: File of type 8 saved to: /mnt/shared/Monitor/01-20201124190202.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 19:02:02] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 24 19:03:57] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 24 19:05:12] event_newfile: File of type 8 saved to: /mnt/shared/Monitor/02-20201124190512.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 19:05:12] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 24 19:05:12] mlp_actions: End of event 2
+[1:ml1] [NTC] [ALL] [Nov 24 19:05:12] motion_loop: Thread exiting
+[1:ml1] [NTC] [STR] [Nov 24 19:05:12] stream_stop: Closing motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [STR] [Nov 24 19:05:12] stream_stop: Closed motion-stream listen socket & active motion-stream sockets
+[1:ml1] [NTC] [VID] [Nov 24 19:05:12] vid_close: Cleaning up V4L2 device
+[1:ml1] [NTC] [VID] [Nov 24 19:05:12] v4l2_cleanup: Closing video device /dev/video0
+[0:wc0] [NTC] [STR] [Nov 24 19:05:13] httpd_run: motion-httpd - Finishing
+[0:wc0] [NTC] [STR] [Nov 24 19:05:13] httpd_run: motion-httpd Closing
+[0:wc0] [NTC] [STR] [Nov 24 19:05:13] motion_web_control: motion-httpd thread exit
+[0:motion] [NTC] [ALL] [Nov 24 19:05:13] main: Threads finished
+[0:motion] [NTC] [ALL] [Nov 24 19:05:14] main: Motion terminating
+[0:motion] [NTC] [ALL] [Nov 24 19:05:14] motion_remove_pid: Removed process id file (pid file).
+[0:motion] [NTC] [ALL] [Nov 24 19:05:14] motion_remove_pid: Closing logfile (/mnt/shared/motion/motion.log).
+[11007624:motion] [NTC] [ALL] [Nov 24 19:07:18] motion_startup: Using log type (ALL) log level (NTC)
+[11007624:motion] [NTC] [ALL] [Nov 24 19:07:18] become_daemon: Motion going to daemon mode
+[11007624:motion] [NTC] [ALL] [Nov 24 19:07:18] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1615
+[11007624:motion] [NTC] [ALL] [Nov 24 19:07:18] motion_startup: Motion running as daemon process
+[11007624:motion] [NTC] [ENC] [Nov 24 19:07:18] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 24 19:07:18] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 24 19:07:18] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 24 19:07:18] main: Waiting for threads to finish, pid: 1615
+[1:ml1] [NTC] [ALL] [Nov 24 19:07:18] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 24 19:07:18] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 24 19:07:18] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:07:18] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 24 19:07:18] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 24 19:07:19] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 24 19:07:19] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 24 19:07:30] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201124190729.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 19:07:30] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 24 19:09:12] mlp_actions: End of event 1
+[1:ml1] [NTC] [ALL] [Nov 24 19:09:12] motion_loop: Thread exiting
+[1:ml1] [NTC] [STR] [Nov 24 19:09:12] stream_stop: Closing motion-stream listen socket & active motion-stream sockets
+[15349384:motion] [NTC] [ALL] [Nov 24 19:12:43] motion_startup: Using log type (ALL) log level (NTC)
+[15349384:motion] [NTC] [ALL] [Nov 24 19:12:43] become_daemon: Motion going to daemon mode
+[15349384:motion] [NTC] [ALL] [Nov 24 19:12:43] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1588
+[15349384:motion] [NTC] [ALL] [Nov 24 19:12:43] motion_startup: Motion running as daemon process
+[15349384:motion] [NTC] [ENC] [Nov 24 19:12:43] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 24 19:12:43] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 24 19:12:43] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 24 19:12:43] main: Waiting for threads to finish, pid: 1588
+[1:ml1] [NTC] [ALL] [Nov 24 19:12:43] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 24 19:12:43] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 24 19:12:43] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 24 19:12:43] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 24 19:12:43] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 24 19:12:44] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 24 19:12:44] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 24 19:12:47] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201124191246.mkv
+[1:ml1] [NTC] [ALL] [Nov 24 19:12:47] motion_detected: Motion detected - starting event 1
+[22574728:motion] [NTC] [ALL] [Nov 28 14:25:17] motion_startup: Using log type (ALL) log level (NTC)
+[22574728:motion] [NTC] [ALL] [Nov 28 14:25:17] become_daemon: Motion going to daemon mode
+[22574728:motion] [NTC] [ALL] [Nov 28 14:25:17] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1718
+[22574728:motion] [NTC] [ALL] [Nov 28 14:25:17] motion_startup: Motion running as daemon process
+[22574728:motion] [NTC] [ENC] [Nov 28 14:25:17] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 28 14:25:17] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 28 14:25:17] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 28 14:25:18] main: Waiting for threads to finish, pid: 1718
+[1:ml1] [NTC] [ALL] [Nov 28 14:25:18] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 28 14:25:18] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 28 14:25:18] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 28 14:25:18] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 28 14:25:18] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 28 14:25:18] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 28 14:25:18] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 28 14:28:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201128142828.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 14:28:28] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 28 14:30:15] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 28 15:39:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201128153957.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 15:39:57] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 28 15:41:03] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 28 16:30:06] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/03-20201128163006.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 16:30:06] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 28 16:31:07] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 28 16:56:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/04-20201128165620.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 16:56:21] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 28 16:58:17] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 28 17:03:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/05-20201128170350.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 17:03:51] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 28 17:05:16] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 28 17:48:03] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/06-20201128174803.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 17:48:03] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 28 17:49:28] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 28 19:42:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/07-20201128194242.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:42:42] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 28 19:43:52] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 28 19:47:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/08-20201128194750.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 19:47:50] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 28 19:50:11] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Nov 28 22:58:20] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/09-20201128225820.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 22:58:20] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Nov 28 22:59:31] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Nov 28 23:18:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/10-20201128231829.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:18:29] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Nov 28 23:19:39] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Nov 28 23:20:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/11-20201128232050.mkv
+[1:ml1] [NTC] [ALL] [Nov 28 23:20:50] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Nov 28 23:22:05] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Nov 29 00:02:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/12-20201129000255.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 00:02:55] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Nov 29 00:04:07] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Nov 29 01:26:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/13-20201129012613.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 01:26:13] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Nov 29 01:27:24] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Nov 29 01:27:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/14-20201129012733.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 01:27:34] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Nov 29 01:28:43] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Nov 29 03:30:47] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/15-20201129033046.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 03:30:47] motion_detected: Motion detected - starting event 15
+[1:ml1] [NTC] [ALL] [Nov 29 03:31:57] mlp_actions: End of event 15
+[1:ml1] [NTC] [EVT] [Nov 29 04:28:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/16-20201129042855.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 04:28:55] motion_detected: Motion detected - starting event 16
+[1:ml1] [NTC] [ALL] [Nov 29 04:30:06] mlp_actions: End of event 16
+[1:ml1] [NTC] [EVT] [Nov 29 05:11:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/17-20201129051121.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 05:11:21] motion_detected: Motion detected - starting event 17
+[1:ml1] [NTC] [ALL] [Nov 29 05:12:31] mlp_actions: End of event 17
+[1:ml1] [NTC] [EVT] [Nov 29 05:24:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/18-20201129052455.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 05:24:55] motion_detected: Motion detected - starting event 18
+[1:ml1] [NTC] [ALL] [Nov 29 05:26:05] mlp_actions: End of event 18
+[1:ml1] [NTC] [EVT] [Nov 29 05:58:03] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/19-20201129055803.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 05:58:03] motion_detected: Motion detected - starting event 19
+[1:ml1] [NTC] [ALL] [Nov 29 05:59:14] mlp_actions: End of event 19
+[1:ml1] [NTC] [EVT] [Nov 29 06:02:36] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/20-20201129060236.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 06:02:36] motion_detected: Motion detected - starting event 20
+[1:ml1] [NTC] [ALL] [Nov 29 06:03:46] mlp_actions: End of event 20
+[1:ml1] [NTC] [EVT] [Nov 29 08:43:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/21-20201129084315.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 08:43:15] motion_detected: Motion detected - starting event 21
+[1:ml1] [NTC] [ALL] [Nov 29 08:44:25] mlp_actions: End of event 21
+[1:ml1] [NTC] [EVT] [Nov 29 12:32:50] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/22-20201129123250.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 12:32:50] motion_detected: Motion detected - starting event 22
+[1:ml1] [NTC] [ALL] [Nov 29 12:34:00] mlp_actions: End of event 22
+[1:ml1] [NTC] [EVT] [Nov 29 16:30:29] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/23-20201129163029.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 16:30:29] motion_detected: Motion detected - starting event 23
+[1:ml1] [NTC] [ALL] [Nov 29 16:32:00] mlp_actions: End of event 23
+[1:ml1] [NTC] [EVT] [Nov 29 17:01:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/24-20201129170115.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 17:01:15] motion_detected: Motion detected - starting event 24
+[1:ml1] [NTC] [ALL] [Nov 29 17:02:40] mlp_actions: End of event 24
+[1:ml1] [NTC] [EVT] [Nov 29 17:11:01] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/25-20201129171100.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 17:11:01] motion_detected: Motion detected - starting event 25
+[1:ml1] [NTC] [ALL] [Nov 29 17:12:26] mlp_actions: End of event 25
+[1:ml1] [NTC] [EVT] [Nov 29 18:26:40] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/26-20201129182640.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 18:26:40] motion_detected: Motion detected - starting event 26
+[1:ml1] [NTC] [ALL] [Nov 29 18:27:50] mlp_actions: End of event 26
+[1:ml1] [NTC] [EVT] [Nov 29 18:49:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/27-20201129184953.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 18:49:53] motion_detected: Motion detected - starting event 27
+[1:ml1] [NTC] [ALL] [Nov 29 18:51:03] mlp_actions: End of event 27
+[1:ml1] [NTC] [EVT] [Nov 29 19:48:23] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/28-20201129194823.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 19:48:23] motion_detected: Motion detected - starting event 28
+[1:ml1] [NTC] [ALL] [Nov 29 19:49:38] mlp_actions: End of event 28
+[1:ml1] [NTC] [EVT] [Nov 29 19:49:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/29-20201129194941.mkv
+[1:ml1] [NTC] [ALL] [Nov 29 19:49:41] motion_detected: Motion detected - starting event 29
+[1:ml1] [NTC] [ALL] [Nov 29 19:50:51] mlp_actions: End of event 29
+[14440072:motion] [NTC] [ALL] [Nov 30 00:43:36] motion_startup: Using log type (ALL) log level (NTC)
+[14440072:motion] [NTC] [ALL] [Nov 30 00:43:36] become_daemon: Motion going to daemon mode
+[14440072:motion] [NTC] [ALL] [Nov 30 00:43:36] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1668
+[14440072:motion] [NTC] [ALL] [Nov 30 00:43:36] motion_startup: Motion running as daemon process
+[14440072:motion] [NTC] [ENC] [Nov 30 00:43:36] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 30 00:43:36] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 30 00:43:36] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 30 00:43:36] main: Waiting for threads to finish, pid: 1668
+[1:ml1] [NTC] [ALL] [Nov 30 00:43:36] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 30 00:43:36] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 30 00:43:36] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 00:43:36] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 30 00:43:37] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 30 00:43:37] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 30 00:43:37] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 30 02:06:31] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201130020631.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 02:06:31] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 30 02:07:57] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 30 02:13:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201130021312.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 02:13:13] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 30 02:14:38] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 30 04:13:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/03-20201130041352.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 04:13:53] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 30 04:15:18] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 30 07:24:28] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/04-20201130072428.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 07:24:28] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 30 07:25:54] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Nov 30 07:33:49] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/05-20201130073349.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 07:33:49] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Nov 30 07:35:15] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Nov 30 07:45:12] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/06-20201130074512.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 07:45:12] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Nov 30 07:46:38] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Nov 30 07:58:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/07-20201130075834.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 07:58:34] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Nov 30 07:59:35] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Nov 30 09:21:57] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/08-20201130092157.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 09:21:57] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Nov 30 09:24:06] mlp_actions: End of event 8
+[7624328:motion] [NTC] [ALL] [Nov 30 13:28:51] motion_startup: Using log type (ALL) log level (NTC)
+[7624328:motion] [NTC] [ALL] [Nov 30 13:28:51] become_daemon: Motion going to daemon mode
+[7624328:motion] [NTC] [ALL] [Nov 30 13:28:51] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1588
+[7624328:motion] [NTC] [ALL] [Nov 30 13:28:51] motion_startup: Motion running as daemon process
+[7624328:motion] [NTC] [ENC] [Nov 30 13:28:51] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 30 13:28:51] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 30 13:28:51] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 30 13:28:51] main: Waiting for threads to finish, pid: 1588
+[1:ml1] [NTC] [ALL] [Nov 30 13:28:51] motion_init: Camera 0 started: motion detection Enabled
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] vid_start: Opening V4L2 device
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_start: Using videodevice /dev/video0 and input -1
+[0:wc0] [NTC] [STR] [Nov 30 13:28:51] http_bindsock: listening on 127.0.0.1 port 8080
+[0:wc0] [NTC] [STR] [Nov 30 13:28:51] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 13:28:51] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 30 13:28:51] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 30 13:28:51] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 30 13:28:51] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[22017672:motion] [NTC] [ALL] [Nov 30 16:51:10] motion_startup: Using log type (ALL) log level (NTC)
+[22017672:motion] [NTC] [ALL] [Nov 30 16:51:10] become_daemon: Motion going to daemon mode
+[22017672:motion] [NTC] [ALL] [Nov 30 16:51:10] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1607
+[22017672:motion] [NTC] [ALL] [Nov 30 16:51:10] motion_startup: Motion running as daemon process
+[22017672:motion] [NTC] [ENC] [Nov 30 16:51:10] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 30 16:51:10] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 30 16:51:10] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 30 16:51:10] main: Waiting for threads to finish, pid: 1607
+[1:ml1] [NTC] [ALL] [Nov 30 16:51:10] motion_init: Camera 0 started: motion detection Enabled
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] vid_start: Opening V4L2 device
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_start: Using videodevice /dev/video0 and input -1
+[0:wc0] [NTC] [STR] [Nov 30 16:51:10] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[0:wc0] [NTC] [STR] [Nov 30 16:51:10] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 16:51:10] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 30 16:51:10] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 30 16:51:10] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 30 16:51:10] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Nov 30 17:45:05] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201130174504.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 17:45:05] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Nov 30 17:46:30] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Nov 30 17:51:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201130175151.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 17:51:51] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Nov 30 17:53:17] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Nov 30 18:09:06] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/03-20201130180906.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 18:09:06] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Nov 30 18:10:31] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Nov 30 18:21:23] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/04-20201130182123.mkv
+[1:ml1] [NTC] [ALL] [Nov 30 18:21:23] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Nov 30 18:22:51] mlp_actions: End of event 4
+[11368072:motion] [NTC] [ALL] [Nov 30 21:02:14] motion_startup: Using log type (ALL) log level (NTC)
+[11368072:motion] [NTC] [ALL] [Nov 30 21:02:14] become_daemon: Motion going to daemon mode
+[11368072:motion] [NTC] [ALL] [Nov 30 21:02:14] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1590
+[11368072:motion] [NTC] [ALL] [Nov 30 21:02:14] motion_startup: Motion running as daemon process
+[11368072:motion] [NTC] [ENC] [Nov 30 21:02:14] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Nov 30 21:02:14] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Nov 30 21:02:14] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Nov 30 21:02:14] main: Waiting for threads to finish, pid: 1590
+[1:ml1] [NTC] [ALL] [Nov 30 21:02:14] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Nov 30 21:02:14] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Nov 30 21:02:14] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Nov 30 21:02:14] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Nov 30 21:02:15] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Nov 30 21:02:15] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Nov 30 21:02:15] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Dec 01 00:03:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201201000308.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 00:03:08] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Dec 01 00:04:36] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Dec 01 01:21:38] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201201012138.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 01:21:38] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Dec 01 01:23:03] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Dec 01 01:23:45] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/03-20201201012344.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 01:23:45] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Dec 01 01:25:10] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Dec 01 04:44:00] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/04-20201201044400.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 04:44:00] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Dec 01 04:45:25] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Dec 01 07:57:24] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/05-20201201075724.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 07:57:24] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Dec 01 07:58:25] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Dec 01 09:08:18] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/06-20201201090818.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 09:08:18] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Dec 01 09:09:18] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Dec 01 09:09:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/07-20201201090922.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 09:09:22] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Dec 01 09:10:23] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Dec 01 10:49:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/08-20201201104952.mkv
+[1:ml1] [NTC] [ALL] [Dec 01 10:49:52] motion_detected: Motion detected - starting event 8
+[21669512:motion] [NTC] [ALL] [Dec 01 21:49:05] motion_startup: Using log type (ALL) log level (NTC)
+[21669512:motion] [NTC] [ALL] [Dec 01 21:49:05] become_daemon: Motion going to daemon mode
+[21669512:motion] [NTC] [ALL] [Dec 01 21:49:05] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1588
+[21669512:motion] [NTC] [ALL] [Dec 01 21:49:05] motion_startup: Motion running as daemon process
+[21669512:motion] [NTC] [ENC] [Dec 01 21:49:05] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Dec 01 21:49:05] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Dec 01 21:49:05] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Dec 01 21:49:05] main: Waiting for threads to finish, pid: 1588
+[1:ml1] [NTC] [ALL] [Dec 01 21:49:05] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Dec 01 21:49:05] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Dec 01 21:49:05] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Dec 01 21:49:05] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Dec 01 21:49:05] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Dec 01 21:49:05] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Dec 01 21:49:05] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Dec 02 06:34:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201202063451.mkv
+[1:ml1] [NTC] [ALL] [Dec 02 06:34:52] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Dec 02 06:35:59] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Dec 02 08:01:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201202080134.mkv
+[1:ml1] [NTC] [ALL] [Dec 02 08:01:34] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Dec 02 08:04:46] mlp_actions: End of event 2
+[16782984:motion] [NTC] [ALL] [Dec 04 19:52:12] motion_startup: Using log type (ALL) log level (NTC)
+[16782984:motion] [NTC] [ALL] [Dec 04 19:52:12] become_daemon: Motion going to daemon mode
+[16782984:motion] [NTC] [ALL] [Dec 04 19:52:12] become_daemon: Created process id file /var/run/motion/motion.pid. Process ID is 1756
+[16782984:motion] [NTC] [ALL] [Dec 04 19:52:12] motion_startup: Motion running as daemon process
+[16782984:motion] [NTC] [ENC] [Dec 04 19:52:12] ffmpeg_global_init: ffmpeg libavcodec version 58.35.100 libavformat version 58.20.100
+[0:motion] [NTC] [ALL] [Dec 04 19:52:12] main: Camera ID: 0 is from /etc/motion/motion.conf
+[0:motion] [NTC] [ALL] [Dec 04 19:52:12] main: Camera ID: 0 Camera Name: (null) Device: /dev/video0
+[0:motion] [NTC] [ALL] [Dec 04 19:52:12] main: Waiting for threads to finish, pid: 1756
+[1:ml1] [NTC] [ALL] [Dec 04 19:52:12] motion_init: Camera 0 started: motion detection Enabled
+[0:wc0] [NTC] [STR] [Dec 04 19:52:12] http_bindsock: listening on 127.0.0.1 port 8080
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] vid_start: Opening V4L2 device
+[0:wc0] [NTC] [STR] [Dec 04 19:52:12] httpd_run: Started motion-httpd server on port 8080 (auth Disabled)
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_start: Using videodevice /dev/video0 and input -1
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_get_capability: 
+------------------------
+cap.driver: "bm2835 mmal"
+cap.card: "mmal service 16.1"
+cap.bus_info: "platform:bcm2835-v4l2"
+cap.capabilities=0x85200005
+------------------------
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_get_capability: - VIDEO_CAPTURE
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_get_capability: - VIDEO_OVERLAY
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_get_capability: - READWRITE
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_get_capability: - STREAMING
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_select_input: name = "Camera 0", type 0x00000002, status 00000000
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_select_input: - CAMERA
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_select_input: Device does not support specifying PAL/NTSC norm
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_do_set_pix_format: Testing palette YUYV (640x480)
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_do_set_pix_format: Using palette YUYV (640x480) bytesperlines 1280 sizeimage 614400 colorspace 00000001
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x00980900, "Brightness", range 0,100 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Brightness", default 50, current 50
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x00980901, "Contrast", range -100,100 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Contrast", default 0, current 0
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x00980902, "Saturation", range -100,100 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Saturation", default 0, current 0
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x00980918, "Power Line Frequency", range 0,3 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Power Line Frequency", default 1, current 1
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x0098090e, "Red Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Red Balance", default 1000, current 1000
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: found control 0x0098090f, "Blue Balance", range 1,7999 
+[1:ml1] [NTC] [VID] [Dec 04 19:52:12] v4l2_scan_controls: 	"Blue Balance", default 1000, current 1000
+[1:ml1] [NTC] [ALL] [Dec 04 19:52:12] image_ring_resize: Resizing pre_capture buffer to 1 items
+[1:ml1] [NTC] [STR] [Dec 04 19:52:12] http_bindsock: listening on any IPv4 address port 8081
+[1:ml1] [NTC] [ALL] [Dec 04 19:52:12] motion_init: Started motion-stream server on port 8081 (auth Disabled)
+[1:ml1] [NTC] [EVT] [Dec 04 20:41:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/01-20201204204141.mkv
+[1:ml1] [NTC] [ALL] [Dec 04 20:41:42] motion_detected: Motion detected - starting event 1
+[1:ml1] [NTC] [ALL] [Dec 04 20:42:45] mlp_actions: End of event 1
+[1:ml1] [NTC] [EVT] [Dec 05 05:05:41] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/02-20201205050541.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 05:05:41] motion_detected: Motion detected - starting event 2
+[1:ml1] [NTC] [ALL] [Dec 05 05:07:52] mlp_actions: End of event 2
+[1:ml1] [NTC] [EVT] [Dec 05 05:59:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/03-20201205055915.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 05:59:15] motion_detected: Motion detected - starting event 3
+[1:ml1] [NTC] [ALL] [Dec 05 06:01:25] mlp_actions: End of event 3
+[1:ml1] [NTC] [EVT] [Dec 05 08:12:39] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/04-20201205081239.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 08:12:39] motion_detected: Motion detected - starting event 4
+[1:ml1] [NTC] [ALL] [Dec 05 08:16:11] mlp_actions: End of event 4
+[1:ml1] [NTC] [EVT] [Dec 05 09:58:52] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/05-20201205095852.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 09:58:52] motion_detected: Motion detected - starting event 5
+[1:ml1] [NTC] [ALL] [Dec 05 10:00:45] mlp_actions: End of event 5
+[1:ml1] [NTC] [EVT] [Dec 05 10:10:22] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/06-20201205101022.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 10:10:22] motion_detected: Motion detected - starting event 6
+[1:ml1] [NTC] [ALL] [Dec 05 10:12:32] mlp_actions: End of event 6
+[1:ml1] [NTC] [EVT] [Dec 05 10:48:58] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/07-20201205104858.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 10:48:58] motion_detected: Motion detected - starting event 7
+[1:ml1] [NTC] [ALL] [Dec 05 10:50:11] mlp_actions: End of event 7
+[1:ml1] [NTC] [EVT] [Dec 05 11:34:00] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/08-20201205113400.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 11:34:00] motion_detected: Motion detected - starting event 8
+[1:ml1] [NTC] [ALL] [Dec 05 11:35:01] mlp_actions: End of event 8
+[1:ml1] [NTC] [EVT] [Dec 05 11:51:55] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/09-20201205115155.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 11:51:55] motion_detected: Motion detected - starting event 9
+[1:ml1] [NTC] [ALL] [Dec 05 11:53:03] mlp_actions: End of event 9
+[1:ml1] [NTC] [EVT] [Dec 05 15:11:09] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/10-20201205151109.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 15:11:09] motion_detected: Motion detected - starting event 10
+[1:ml1] [NTC] [ALL] [Dec 05 15:12:19] mlp_actions: End of event 10
+[1:ml1] [NTC] [EVT] [Dec 05 16:52:36] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/11-20201205165236.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 16:52:36] motion_detected: Motion detected - starting event 11
+[1:ml1] [NTC] [ALL] [Dec 05 16:53:46] mlp_actions: End of event 11
+[1:ml1] [NTC] [EVT] [Dec 05 16:58:42] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/12-20201205165842.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 16:58:42] motion_detected: Motion detected - starting event 12
+[1:ml1] [NTC] [ALL] [Dec 05 16:59:52] mlp_actions: End of event 12
+[1:ml1] [NTC] [EVT] [Dec 05 17:41:15] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/13-20201205174115.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 17:41:15] motion_detected: Motion detected - starting event 13
+[1:ml1] [NTC] [ALL] [Dec 05 17:42:16] mlp_actions: End of event 13
+[1:ml1] [NTC] [EVT] [Dec 05 18:54:30] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/14-20201205185430.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 18:54:30] motion_detected: Motion detected - starting event 14
+[1:ml1] [NTC] [ALL] [Dec 05 18:55:31] mlp_actions: End of event 14
+[1:ml1] [NTC] [EVT] [Dec 05 19:36:08] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/15-20201205193608.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 19:36:08] motion_detected: Motion detected - starting event 15
+[1:ml1] [NTC] [ALL] [Dec 05 19:37:08] mlp_actions: End of event 15
+[1:ml1] [NTC] [EVT] [Dec 05 19:44:51] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/16-20201205194450.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 19:44:51] motion_detected: Motion detected - starting event 16
+[1:ml1] [NTC] [ALL] [Dec 05 19:46:11] mlp_actions: End of event 16
+[1:ml1] [NTC] [EVT] [Dec 05 19:51:44] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/17-20201205195144.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 19:51:44] motion_detected: Motion detected - starting event 17
+[1:ml1] [NTC] [ALL] [Dec 05 19:52:48] mlp_actions: End of event 17
+[1:ml1] [NTC] [EVT] [Dec 05 23:58:34] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/18-20201205235834.mkv
+[1:ml1] [NTC] [ALL] [Dec 05 23:58:34] motion_detected: Motion detected - starting event 18
+[1:ml1] [NTC] [ALL] [Dec 06 00:00:44] mlp_actions: End of event 18
+[1:ml1] [NTC] [EVT] [Dec 06 01:02:13] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/19-20201206010213.mkv
+[1:ml1] [NTC] [ALL] [Dec 06 01:02:13] motion_detected: Motion detected - starting event 19
+[1:ml1] [NTC] [ALL] [Dec 06 01:03:18] mlp_actions: End of event 19
+[1:ml1] [NTC] [EVT] [Dec 06 01:30:21] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/20-20201206013021.mkv
+[1:ml1] [NTC] [ALL] [Dec 06 01:30:21] motion_detected: Motion detected - starting event 20
+[1:ml1] [NTC] [ALL] [Dec 06 01:31:21] mlp_actions: End of event 20
+[1:ml1] [NTC] [EVT] [Dec 06 07:08:53] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/21-20201206070853.mkv
+[1:ml1] [NTC] [ALL] [Dec 06 07:08:53] motion_detected: Motion detected - starting event 21
+[1:ml1] [NTC] [ALL] [Dec 06 07:10:03] mlp_actions: End of event 21
+[1:ml1] [NTC] [EVT] [Dec 06 09:26:05] event_newfile: File of type 8 saved to: /home/pi/secSecure/Monitor/22-20201206092605.mkv
+[1:ml1] [NTC] [ALL] [Dec 06 09:26:05] motion_detected: Motion detected - starting event 22
+[1:ml1] [NTC] [ALL] [Dec 06 09:27:31] mlp_actions: End of event 22
