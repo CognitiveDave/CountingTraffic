@@ -4,23 +4,21 @@ Spyder Editor
 Parsing the Motion log
 """
 import datetime
-pathd = "/Users/davidmoore/Downloads/e2eSensorNetwork-master/mot/"
-filed = "motion5.log"
+pathd = "/Users/davidmoore/Downloads/e2eSensorNetwork-master/motion/"
+filed = "motion2.log"
 evtStatus = False
 full_path = pathd+filed
 camera = filed.split(".")[0]
 evtStart = ""
 evtEnd = ""
 fileName = ""
-year = "2019"
+year = "2020"
 records = []
-
+import pickle
 
 def dateClean(dateString):
     date_time_obj = datetime.datetime.strptime(dateString, '%Y %b %d %H:%M:%S')
-    return date_time_obj
-    
-
+    return date_time_obj    
 
 
 with open(full_path) as f:
@@ -54,11 +52,17 @@ for line in lines:
                 evtStatus = True
                 evtStartD = components[3].strip(" ")
                 fileName = components[4].split(":")[2].strip()
-                year = fileName.split("/")[5].split("-")[1][:4]
+                try:
+                    year = fileName.split("/")[5].split("-")[1][:4]
+                except:
+                    year = "2020"
                 evtStart = dateClean(year+" "+evtStartD)
 
  
 
-    
+with open(pathd+"anal", "wb") as f:
+    pickle.dump(records, f, pickle.HIGHEST_PROTOCOL)
+
+   
     
     
