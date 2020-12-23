@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+from subprocess import call
+import sys
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 import glob
 import os
@@ -36,9 +37,18 @@ vids3 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/Monitor3
 vids4 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/Monitor4/*.mkv"))
 vids5 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/Monitor5/*.mkv"))
 vids6 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/Monitor6/*.mkv"))
+vids7 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/PiHut/*.h264"))
+conv = "/Users/davidmoore/Downloads/e2eSensorNetwork-master/PiHutmp4"
+
+for vid in vids7:
+    clip = f"/Applications/GPAC.app/Contents/MacOS/MP4Box -add {vid} {vid[:-5]}.mp4"
+    print(clip)
+    os.system(clip)
+    
+vids7 = (glob.glob("/Users/davidmoore/Downloads/e2eSensorNetwork-master/PiHut/*.mp4"))  
 
 
-videos = [vids,vids2,vids3,vids4,vids5,vids6]
+videos = [vids,vids2,vids3,vids4,vids5,vids6,vids7]
 
 unprocess = []
 
@@ -55,11 +65,9 @@ if (len(vids) > 0):
     
     if (len(vids) > 0):
         for vid in vids:
-           try: 
-            clip = VideoFileClip(vid)
-            vid_list.append(clip)
-           except:
-            continue
+           clip = VideoFileClip(vid)
+           vid_list.append(clip)
+
               
    
     if (len(vid_list) > 0):
@@ -84,6 +92,9 @@ if (len(vids) > 0):
 
         for vid in vids6:
             os.remove(vid)
+            
+        for vid in vids7:
+            os.remove(vid)            
 
 
 else:
